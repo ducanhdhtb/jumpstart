@@ -1,144 +1,60 @@
-<style>
-  {% if section.settings.logo != blank %}
-    .site-header__logo-image {
-      max-width: {{ section.settings.logo_max_width }}px;
-    }
-  {% endif %}
-</style>
-<div data-section-id="{{ section.id }}" data-section-type="header-section">
-  <header role="banner">
-    {% if template.name == 'index' %}
-      <h1 itemscope itemtype="http://schema.org/Organization">
-    {% else %}
-      <div class="h1" itemscope itemtype="http://schema.org/Organization">
-    {% endif %}
-        <a href="/" itemprop="url" class="site-logo{% if section.settings.logo != blank %} site-header__logo-image{% endif %}">
-          {% if section.settings.logo != blank %}
-            {% capture image_size %}{{ section.settings.logo_max_width }}x{% endcapture %}
-            <img src="{{ section.settings.logo | img_url: image_size }}"
-                 srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
-                 alt="{{ section.settings.logo.alt | default: shop.name }}"
-                 itemprop="logo">
-          {% else %}
-            {{ shop.name }}
-          {% endif %}
-        </a>
-    {% if template.name == 'index' %}
-      </h1>
-    {% else %}
+<div class="header">
+   <div class="topheader">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-3">
+               <div class="logo">
+                  <h1>Jumpstart</h1>
+               </div>
+            </div>
+            <!-- End col 3 -->
+            <div class="col-md-9">
+               <nav class="menutop">
+                  <ul>
+                     <li>
+                        <a href="">Features</a>
+                        <a href="">faq</a>
+                        <a href="">news</a>
+                        <a href="">Icon</a>
+                        <a href="">Buy $149.99</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+            <!-- End col 9 -->
+         </div>
+         <!-- End row -->
       </div>
-    {% endif %}
+   </div><!-- End top header -->
+   <div class="bottomheader">
+     <h1>Open Sesame</h1>
+      <a href="">
+        <span class="glyphicon glyphicon-play"></span>
+      </a> 
+   </div>
+</div><!-- End header -->
+<div class="clearfix" style="clear:both"></div>
+<!-- Start crowfunding -->
+<div class="crowfunding">
+  <div class="row">
+    <div class="col-sm-12">
+       <div class="container text-center">
+        <h2>Crowdfunding</h2>
+        <h3>Campaign tracker</h3>   
+      </div> 
+    </div>     
+  </div><!-- End 1 row -->
 
-    <a href="/cart">
-      {% include 'icon-cart' %}
-      {{ 'layout.cart.title' | t }}
-      ({{ cart.item_count }} {{ 'layout.cart.items_count' | t: count: cart.item_count }})
-    </a>
-
-    {% if shop.customer_accounts_enabled %}
-      <ul>
-        {% if customer %}
-          <li>
-            {% if customer.first_name != blank %}
-              {% capture first_name %}<a href="/account">{{ customer.first_name }}</a>{% endcapture %}
-              {{ 'layout.customer.logged_in_as_html' | t: first_name: first_name }}
-            {% else %}
-              <a href="/account">{{ 'layout.customer.account' | t }}</a>
-            {% endif %}
-          </li>
-          <li>
-            {{ 'layout.customer.log_out' | t | customer_logout_link }}
-          </li>
-        {% else %}
-          <li>
-            {{ 'layout.customer.log_in' | t | customer_login_link }}
-          </li>
-          <li>
-            {{ 'layout.customer.create_account' | t | customer_register_link }}
-          </li>
-        {% endif %}
-      </ul>
-    {% endif %}
-
-    <form action="/search" method="get" role="search">
-      <label for="Search" class="label-hidden">
-        {{ 'general.search.placeholder' | t }}
-      </label>
-      <input type="search"
-             name="q"
-             id="Search"
-             value="{{ search.terms | escape }}"
-             placeholder="{{ 'general.search.placeholder' | t }}">
-      <button type="submit" class="btn">
-        {% include 'icon-search' %}
-        <span class="icon-fallback-text">{{ 'general.search.submit' | t }}</span>
-      </button>
-    </form>
-
-  </header>
-
-  <nav role="navigation">
-    <ul>
-      {% for link in linklists[section.settings.main_linklist].links %}
-        {% if link.links != blank %}
-          <li>
-            <a href="{{ link.url }}">{{ link.title | escape }}</a>
-            <ul>
-              {% for childlink in link.links %}
-                {% if childlink.links != blank %}
-                  <li>
-                    <a href="{{ childlink.url }}">{{ childlink.title | escape }}</a>
-                    <ul>
-                      {% for grandchildlink in childlink.links %}
-                        <li>
-                          <a href="{{ grandchildlink.url }}">{{ grandchildlink.title | escape }}</a>
-                        </li>
-                      {% endfor %}
-                    </ul>
-                  </li>
-                {% else %}
-                  <li>
-                    <a href="{{ childlink.url }}">{{ childlink.title | escape }}</a>
-                  </li>
-                {% endif %}
-              {% endfor %}
-            </ul>
-          </li>
-        {% else %}
-          <li>
-            <a href="{{ link.url }}">{{ link.title | escape }}</a>
-          </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </nav>
-</div>
-
-{% schema %}
-  {
-    "name": "Header",
-    "settings": [
-      {
-        "type": "image_picker",
-        "id": "logo",
-        "label": "Logo image"
-      },
-      {
-        "type": "range",
-        "id": "logo_max_width",
-        "min": 50,
-        "max": 450,
-        "step": 10,
-        "unit": "px",
-        "label": "Custom logo width",
-        "default": 250
-      },
-      {
-        "type": "link_list",
-        "id": "main_linklist",
-        "label": "Menu",
-        "default": "main-menu"
-      }
-    ]
-  }
-{% endschema %}
+  <div class="row">
+        <div class="col-xs-12 col-sm-12  col-sm-offset-4">
+            <div class="kickstarter">
+              <ul>
+                <li><strong>75%</strong><span>funded</span></li>
+                <li><strong>$1000</strong><span>pledged</span></li>
+                <li><strong>10</strong><span>backers</span></li>
+              </ul>
+              </div> 
+        </div>
+  </div><!-- End 1 row -->
+     
+</div><!-- End Start crowfunding -->

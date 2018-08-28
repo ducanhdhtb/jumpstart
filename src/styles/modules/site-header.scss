@@ -1,9 +1,160 @@
 /*================ Site Header ================*/
-.site-logo {
-  display: block;
-
-  img {
-    display: block;
-    width: 100%;
-  }
+html, body, div, span, applet, object, iframe, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: Montserrat,sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End Reset css */
+/* Start Header */
+.header {
+    background-image: url({{ 'bg.jpg' | asset_url }});
+    background-size: cover;
+    width: 100%;
+    min-height: 800px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position:relative;
+
+    .topheader {
+	    padding: 36px 0px 0px;	    
+	   /*  border-bottom: 1px solid grey; */
+	    .logo{
+			float:left;
+			 h1 {
+			    color: #429c80;
+			    font-weight: bold;
+			    font-size: 21px;
+			    padding: 0px;
+			    margin: 0px;
+			}
+		}
+	    .menutop{
+			float:right;
+			ul{
+				li{
+					a{
+						text-transform: uppercase;
+					    color: grey;
+					    margin-right: 15px;
+					    font-size: 13px;
+					    text-decoration:none;
+					    transition:1.4s;
+					}
+					a:last-child {
+					    color: red;
+					    border: 2px solid black;
+					    padding: 8px;
+					    color: grey;
+					}		
+					a:hover{
+						border-bottom:2px solid #429c80;
+						color:#429c80;
+					}
+					a:last-child:hover{
+						color:white;
+						background:black;
+					}
+					
+				}
+			}	
+		}					
+	}
+	.bottomheader{
+		h1{
+			color: black;
+		    position: absolute;
+		    top: 43%;
+		    left: 35%;
+		    font-size: 4.2em;
+		    line-height: 1px;
+		    letter-spacing: 2px;
+		    font-weight: bold;
+		    padding: 0;
+		    margin: 0;
+		    z-index: 2;
+		}
+		span.glyphicon.glyphicon-play-circle {
+		    font-size: 130px;
+		    background: none;
+		    color: #429c80;
+		    position: absolute;
+		    top: 53%;
+		    left: 41%;
+		    transition:0.5s;
+		}
+		span.glyphicon.glyphicon-play {
+		    font-size: 55px;
+		    color: white;
+		    background: #429c80;
+		    border-radius: 50%;
+		    padding: 30px 30px 30px 34px;
+		    position: absolute;
+		    top: 52%;
+		    left: 42%;
+		    transition:0.4s;
+		}
+		span.glyphicon.glyphicon-play:hover{
+			font-size:100px;
+		}
+	}
+}
+	/* Css for mobile */
+@media screen and (max-width: 600px) {
+ .header .bottomheader h1 {
+    color: black;
+    position: absolute;
+    top: 43%;
+    left: 35%;
+    font-size: 3.2em;
+    line-height: 1px;
+    letter-spacing: 0px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    z-index: 2;
+	}
+}
+	/* End Css for mobile */
+/* End Header */
+
+
+
+
