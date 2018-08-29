@@ -1,0 +1,58 @@
+.row1 .block1{
+	width: 100%;
+	height:600px;
+	background-image:url({{ '1.jpg' | asset_url }});
+	background-position: center center;
+}
+.row1 .block2{
+	width: 100%;
+	height:600px;
+	background-color:black;
+	padding-top:9%;
+	padding-left:5%;
+}
+.row1 .block2 p {
+    font-size: 1em;
+    /* margin: 15px 0 0; */
+    color: white;
+    line-height: 29px;
+    width: 67%;
+    margin-top: 2%;
+}
+.row1 .block2 h3{
+	font-size: 2.85714em;
+    font-weight: 700;
+    margin: 0;
+    color:white;
+}
+.row1 .block2 p{
+	font-size: 1.28571em;
+    margin: 15px 0 0;
+    color:white;
+}
+.row2 .block3 {
+    width: 100%;
+    height: 600px;
+    background-color: #429c80;
+    padding-top: 10%;
+    padding-left: 20%;
+}
+.row2 .block3 h3{
+	font-size: 2.5em;
+    font-weight: 700;
+    margin: 0;
+    color:black;
+}
+.row2 .block3 p {
+    font-size: 1em;
+    color: black;
+    width: 85%;
+    margin-top: 20px;
+    line-height: 25px;
+}
+.row2 .block4{
+	width: 100%;
+	height:600px;
+	background-image:url({{ '2.jpg' | asset_url }});
+	background-position: center center;
+}

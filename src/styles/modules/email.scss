@@ -1,0 +1,31 @@
+.email{
+	padding-bottom:50px;
+	border-bottom:1px dotted green;
+}
+.underline {
+    width: 11%;
+    border-bottom: 3px solid #429c80;
+    margin: 19px auto;
+}
+.email-content {
+    width: 50%;
+    margin: 100px auto;
+}
+.email-content input.form-control {
+    width: 47%;
+    display: inline-block;
+    margin-top: 67px;
+    padding: 19px 0px 22px 21px;
+    border-outside: none;
+    border-radius: 0px;
+}
+.email-content button.btn.btn-primary {
+    text-align: center;
+    border-radius: 0px;
+    min-height: 43px;
+    padding-top: 8px;
+    padding-bottom: 11px;
+    background: #429c80;
+    width: 125px;
+    cursor: pointer;
+}
