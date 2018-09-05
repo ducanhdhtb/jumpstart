@@ -3,6 +3,7 @@
 	height:600px;
 	background-image:url({{ '1.jpg' | asset_url }});
 	background-position: center center;
+    background-size:cover;
 }
 .row1 .block2{
 	width: 100%;
@@ -10,6 +11,7 @@
 	background-color:black;
 	padding-top:9%;
 	padding-left:5%;
+    background-size:cover;
 }
 .row1 .block2 p {
     font-size: 1em;
@@ -36,6 +38,7 @@
     background-color: #429c80;
     padding-top: 10%;
     padding-left: 20%;
+    background-size:cover;
 }
 .row2 .block3 h3{
 	font-size: 2.5em;
@@ -51,6 +54,7 @@
     line-height: 25px;
 }
 .row2 .block4{
+    background-size:cover;
 	width: 100%;
 	height:600px;
 	background-image:url({{ '2.jpg' | asset_url }});
