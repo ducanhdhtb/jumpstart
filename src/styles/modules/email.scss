@@ -1,6 +1,7 @@
 .email{
 	padding-bottom:50px;
 }
+
 .underline {
     width: 11%;
     margin: 19px auto;
@@ -26,4 +27,26 @@
     background: #429c80;
     width: 125px;
     cursor: pointer;
+}
+.email-content label {
+    font-size: 22px;
+    font-weight: bold;
+}
+@media screen and (max-width:600px) {
+    .email-content input.form-control {
+        width: 55%;
+        display: inline-block;
+        margin: 19px 0px;
+        padding: 19px 0px 22px 21px;
+        border-outside: none;
+        border-radius: 0px;
+    }
+    .email-content label {
+        font-size: 19px;
+        font-weight: bold;
+    }
+   .email-content {
+        width: 100%;
+        margin: 30px 0px 0px 0px;
+    }
 }

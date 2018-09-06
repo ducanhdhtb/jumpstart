@@ -37,6 +37,26 @@
 	}
 }
 @media screen and (max-width: 600px) {
- 
+	 .crowfunding h2 {
+	    font-size: 2em;
+	    line-height: 1.2;
+	    margin-bottom: 9px;
+	}
+	.crowfunding {
+    	padding: 40px 0px 0px 0px;
+	}
+	.crowfunding li {
+	    display: inline-block;
+	    width: 31.3%;
+	    text-align: center;
+	    padding: 0px;
+	    margin: 0px;
+	}
+	.crowfunding .kickstarter {
+	    padding: 0px;
+	    margin: 0px;
+	    padding: 0px;
+	    margin-top: 13px;
+	}
 }
 /* End Start Crowdfunding */

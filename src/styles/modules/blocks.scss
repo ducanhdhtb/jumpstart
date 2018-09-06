@@ -60,3 +60,40 @@
 	background-image:url({{ '2.jpg' | asset_url }});
 	background-position: center center;
 }
+@media screen and (max-width:600px) {
+    .container-fluid{
+        padding:0px;
+        margin:0px;
+    } 
+    .container{
+        padding:0px;
+        margin:0px;
+    }   
+    .row1 .block2 p {
+        font-size: 1em;
+        line-height: 26px;
+        color: white;
+        width: 100%;
+        margin-top: 6%;
+        text-align: justify;
+        color: white;
+        padding-left: 21px;
+        padding-right: 24px;
+        font-weight: 600
+    }
+    .row2 .block3 p {
+        font-size: 1em;
+        color: black;
+        width: 85%;
+        margin-top: 20px;
+        line-height: 25px;
+        text-align: justify;
+        margin: 1px auto;
+        line-height: 21px;
+        margin-top: 18px;
+        padding-left: 26px;
+        padding-right: 26px;
+        font-weight: 600
+    }
+
+}

@@ -52,3 +52,99 @@ a.btn.btn--large.btn--outline.btn--dark {
 .center {
     margin: 3% auto;
 }
+@media screen and (max-width: 600px) {
+  .row._1item h2 {
+    font-family: Montserrat,sans-serif;
+    color: #111;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+	}
+	.row._1item h1 {
+	    font-size: 1.5em;
+	    margin: 0.67em 0;
+	}
+	.title {
+    text-align: center;
+    margin: 1px auto;
+    font-size: 25px;
+	}
+	.btn.btn--outline.btn--dark {
+	    color: #141414;
+	    border-color: #141414;
+	    border: 1px solid black;
+	    padding: 11px 29px;
+	    border-radius: 0px;
+	    display: block;
+	    border-width: 2px;
+	    margin-top: 20px;
+	    margin-bottom: 20px;
+	}
+}
+@media screen and (max-width:600px){
+	.row1 .block2 h3 {
+    font-size: 2em;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+	}
+	.row1 .block2 p {
+	    font-size: 1em;
+	    line-height: 26px;
+	    color: white;
+	    width: 100%;
+	    margin-top: 6%;
+	    text-align: justify;
+	    color:white;
+	}
+	.row1 .block2 {
+	    width: 100%;
+	    height: auto;
+	    background-color: black;
+	    padding-top: 9%;
+	    padding-left: 5%;
+	    background-size: cover;
+	    padding-bottom: 9%;
+	}
+	.row2 .block3 {
+	    width: 100%;
+	    height: auto;
+	    background-color: #429c80;
+	    padding-top: 10%;
+	    padding-bottom: 10%;
+	    padding-left:0px;
+	}
+	.row2 .block3 p {
+	    font-size: 1em;
+	    color: black;
+	    width: 85%;
+	    margin-top: 20px;
+	    line-height: 25px;
+	    text-align: justify;
+	    margin: 1px auto;
+	    line-height: 21px;
+	    margin-top: 18px;
+	}
+	.row2 .block3 h3 {
+	    font-size: 2.5em;
+	    font-weight: 700;
+	    margin: 0;
+	    color: black;
+	    text-align: center;
+	}
+	.row2 .block4 {
+	    background-size: cover;
+	    width: 100%;
+	    height: 289px;
+	    background-image: url(//cdn.shopify.com/s/files/1/0022/8147/2069/t/5/assets/2.jpg?1359952…);
+	    background-position: center center;
+	}
+	.row1 .block1 {
+	    width: 100%;
+	    height: 274px;
+	    background-image: url(//cdn.shopify.com/s/files/1/0022/8147/2069/t/5/assets/1.jpg?1359952…);
+	    background-position: center center;
+	    background-size: cover;
+	}
+}

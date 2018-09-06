@@ -9,18 +9,25 @@
             </div>
             <!-- End col 3 -->
             <div class="col-md-9">
-               <nav class="menutop">
+               <button class="glyphicon glyphicon-th-list toggle" ></button>              
+               <nav class="menutop"> 
                   <ul>
-                     <li>
-                        <a href="">Features</a>
-                        <a href="">faq</a>
-                        <a href="">news</a>
-                        <a href="">Icon</a>
-                        <a href="">Buy $149.99</a>
-                     </li>
+                     <li><a href="">Features</a></li>
+                     <li><a href="">faq</a></li>
+                     <li><a href="">news</a></li>
+                     <li><a href="">Icon</a></li>
+                     <li><a href="">Buy $149.99</a></li>
                   </ul>
                </nav>
             </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script>
+               $(document).ready(function(){
+                   $(".toggle").click(function(){
+                        $(".menutop").slideToggle();
+                   });                  
+               });
+            </script>
             <!-- End col 9 -->
          </div>
          <!-- End row -->

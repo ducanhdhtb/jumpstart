@@ -57,6 +57,9 @@ table {
     .topheader {
 	    padding: 36px 0px 0px;	    
 	   /*  border-bottom: 1px solid grey; */
+	   .toggle{
+				display:none;
+			}
 	    .logo{
 			float:left;
 			 h1 {
@@ -71,6 +74,7 @@ table {
 			float:right;
 			ul{
 				li{
+					float:left;								
 					a{
 						text-transform: uppercase;
 					    color: grey;
@@ -78,22 +82,23 @@ table {
 					    font-size: 13px;
 					    text-decoration:none;
 					    transition:1.4s;
+					    border:none;
 					}
 					a:last-child {
 					    color: red;
-					    border: 2px solid black;
+					    border: none;
 					    padding: 8px;
 					    color: grey;
 					}		
 					a:hover{
-						border-bottom:2px solid #429c80;
-						color:#429c80;
+						    border-bottom: 2px solid #429c80;
+    						color: #429c80;
+    						background: transparent;
 					}
 					a:last-child:hover{
 						color:white;
 						background:black;
-					}
-					
+					}					
 				}
 			}	
 		}					
@@ -139,6 +144,76 @@ table {
 }
 	/* Css for mobile */
 @media screen and (max-width: 600px) {
+	body{
+		margin:0px;
+		padding:0px;
+	}
+	.header .topheader .logo h1 {
+	    color: #429c80;
+	    font-weight: bold;
+	    font-size: 21px;
+	    padding: 0px;
+	    margin: 0px;
+	    font-family: monospace;
+	    padding-left: 14px;
+	}
+	.bottomheader {
+    	display: none;
+	}
+	.header .topheader .menutop {
+	    float: right;
+	    margin-top: 20px;
+	}
+	.header .topheader .toggle {
+	    display: block;
+	    float: right;
+	    font-size: 27px;
+	    background: none;
+	    border: none;
+	    margin-top: -30px;
+	    color:green;
+	}
+
+
+	.topheader .menutop {
+	    display: none;
+	    width: 100%;
+	   
+	}
+
+	.header .topheader .menutop ul li {
+	    display: block;
+	    text-align: center;
+	    padding: 18px 0px;
+	    width: 100%;
+	    color: black !important;
+	    background: #ffffff47;
+	}
+	.header .topheader .menutop ul li a:last-child:hover {
+	    color: white;
+	    background: none;
+	    border-bottom: 0px;
+	    color: black;
+	}
+	.header .topheader .menutop ul li a {
+	    text-transform: uppercase;
+	    color: black;
+	    margin-right: 15px;
+	    font-size: 13px;
+	    text-decoration: none;
+	    transition: 1.4s;
+	    border: none;
+	    font-weight: bold;
+	}
+	.header {
+	    background-image: url(//cdn.shopify.com/s/files/1/0022/8147/2069/t/5/assets/bg.jpg?6401241576825923975);
+	    background-size: cover;
+	    width: 100%;
+	    min-height: 320px;
+	    background-repeat: no-repeat;
+	    background-position: center center;
+	    position: relative;
+	}
  .header .bottomheader h1 {
     color: black;
     position: absolute;
@@ -152,6 +227,30 @@ table {
     margin: 0;
     z-index: 2;
 	}
+	.header .bottomheader h1 {
+	    color: black;
+	    position: absolute;
+	    top: 42%;
+	    left: 28%;
+	    font-size: 1.8em;
+	    letter-spacing: 0px;
+	    font-weight: bold;
+	    padding: 0;
+	    margin: 0;
+	    z-index: 2;
+	}
+	.header .bottomheader span.glyphicon.glyphicon-play {
+	    font-size: 31px;
+	    color: white;
+	    background: #429c80;
+	    border-radius: 50%;
+	    padding: 8px 10px 10px 14px;
+	    position: absolute;
+	    top: 49%;
+	    left: 40%;
+	    transition: 0.4s;
+	}
+	
 }
 	/* End Css for mobile */
 /* End Header */

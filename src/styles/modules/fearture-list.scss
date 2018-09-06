@@ -28,3 +28,34 @@
     font-weight: bold;
   }
 }
+@media screen and (max-width:600px){
+  .feature-content-item p {
+    margin: 0 0 30px 0;
+    line-height: 23px;
+    color: #6c757d;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 20px;
+  }
+  .feature-caption .underline {
+    width: 19%;
+    border-bottom: 3px solid #429c80;
+    margin-top: 72px 0px 0px 20px;
+    margin-top: 22px;
+    margin-bottom: 41px;
+    margin-left: 0px;
+    margin: 10px auto;
+    margin-top: 25px;
+  }
+  .feature-caption .home-section-title {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .col-xs-12.col-sm-6.col-md-4 {
+    text-align: center;
+  }
+  .feature-content-item {
+    margin-bottom: 30px;
+  }
+}

@@ -44,3 +44,33 @@ footer p a:hover{
 	color:green;
 	text-decoration:none;
 }
+@media screen and  (max-width: 600px) {
+    footer {
+        background: black;
+        padding: 20px 0px 30px 0px;
+    }
+    footer ul li a {
+        font-size: 0.8em;
+        line-height: 1;
+        font-weight: 600;
+        margin: 0 0px;
+        text-decoration: none;
+        color: #ffffff8a;
+    }
+    footer h1 {
+        color: #dbdbdb;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-size: 36px;
+        margin-bottom: 8%;
+    }
+    footer p {
+        color: #ffffff9e;
+        font-size: 14px;
+    }
+    footer .underline {
+        width: 85%;
+        margin: 20px auto;
+        border: 1px solid #ffffff47;
+    }
+}

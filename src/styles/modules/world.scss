@@ -31,3 +31,16 @@
     width: 70%;
     color: #000000a1;
 }
+@media screen and (max-width:600px) {
+    .world-caption h4 {
+    margin: 30px 30px 0px 30px;
+    text-align: center;
+    }
+    .world-caption p {
+        margin: 23px auto;
+        line-height: 23px;
+        font-size: 14px;
+        width: 80%;
+        color: #00000069;
+    }
+}
