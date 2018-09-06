@@ -1,0 +1,46 @@
+footer {
+    background: black;
+    padding: 100px;
+}
+footer h1 {
+    color: #dbdbdb;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 45px;
+    margin-bottom: 44px;
+}
+footer h1:hover{
+	color:#429c80;
+	cursor:pointer;
+}
+footer .underline{
+    width: 85%;
+    margin: 31px auto;
+    border: 1px solid #ffffff47;
+}
+footer ul li{
+	list-style-type:none;
+	display:inline-block;
+}
+footer ul li a{
+	font-size: 1.07143em;
+    line-height: 1;
+    font-weight: 600;
+    margin: 0 15px;
+    text-decoration:none;
+    color: #ffffff8a;
+}
+footer ul li a:hover{
+	text-decoration:none;
+	color:#429c80;
+}
+footer p{
+	color:#ffffff9e;
+}
+footer p a{
+	color:#ffffff9e;
+}
+footer p a:hover{
+	color:green;
+	text-decoration:none;
+}
