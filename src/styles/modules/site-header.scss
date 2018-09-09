@@ -27,7 +27,11 @@ body {
 	line-height: 1;
 	font-family: Montserrat,sans-serif;
 	color:#2d2d2d;
+	/* overflow-x:hidden; */
 }
+ html {
+  overflow-y: scroll;
+} 
 ol, ul {
 	list-style: none;
 }
@@ -147,6 +151,7 @@ table {
 	body{
 		margin:0px;
 		padding:0px;
+		overflow-x:hidden;
 	}
 	.header .topheader .logo h1 {
 	    color: #429c80;
